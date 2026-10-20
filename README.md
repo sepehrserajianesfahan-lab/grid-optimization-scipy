@@ -9,7 +9,7 @@ Modern smart grid architectures require fast, reliable optimization algorithms t
 
 ## Key Features
 * **Zero External Dependencies:** Built strictly using `numpy` and `scipy`, ensuring 100% cross-platform reproducibility without external MILP/LP binaries.
-* **Full Network Physics:** Direct matrix formulation of nodal power balance equations ($P_{gi} - P_{di} = \sum B_{ij}(\theta_i - \theta_j)$) and line flow limits.
+* **Full Network Physics:** Direct matrix formulation of nodal power balance equations ($P_{gi} - P_{di} = \sum_{j} B_{ij}(\theta_i - \theta_j)$) and line flow limits.
 * **Modern HiGHS Solver:** Leverages SciPy's state-of-the-art dual simplex / interior point solver (`method='highs'`).
 
 ## Mathematical Formulation
